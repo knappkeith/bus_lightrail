@@ -9,7 +9,6 @@ class Bus_HTMLParser(HTMLParser):
         html = response.read()
 
         # add a check for bad url/error codes
-
         self.print_it = False
         self.print_row = False
         self.print_cell = False
@@ -17,14 +16,9 @@ class Bus_HTMLParser(HTMLParser):
         self.tables = []
         self.table_count = 0
         self.cur_head = False
-
-
-
-
         self.feed(html)
 
         
-
     def handle_starttag(self, tag, attrs):
         if tag == 'table':
             self.print_it = True
