@@ -1,0 +1,24 @@
+transit_options = {}
+
+
+# Bus Lines
+# H Route, from Target to 18th and California (F Line)
+transit_options['HX'] = {}
+
+# East Bound
+transit_options['HX']['east'] = {}
+transit_options['HX']['east']['one'] = {}
+transit_options['HX']['east']['one']['url'] = 'http://www3.rtd-denver.com/schedules/getSchedule.action?runboardId=151&routeType=12&routeId=HX&serviceType=3'
+transit_options['HX']['east']['one']['start'] = 1
+transit_options['HX']['east']['one']['end'] = 6
+transit_options['HX']['east']['one']['direction'] = 'east'
+transit_options['HX']['east']['one']['days_valid'] = ['M','T','W','Th','F']
+
+# West Bound
+transit_options['HX']['west'] = {}
+transit_options['HX']['west']['one'] = {}
+transit_options['HX']['west']['one']['url'] = 'http://www3.rtd-denver.com/schedules/getSchedule.action?runboardId=151&routeId=HX&routeType=12&direction=W-Bound&serviceType=3'
+transit_options['HX']['west']['one']['start'] = 2
+transit_options['HX']['west']['one']['end'] = 7
+transit_options['HX']['west']['one']['direction'] = 'east'
+transit_options['HX']['west']['one']['days_valid'] = ['M','T','W','Th','F']
