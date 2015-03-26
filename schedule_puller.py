@@ -36,12 +36,14 @@ transit_options[2]['direction'] = 'west'
 transit_options[2]['days_valid'] = ['M','T','W','Th','F']
 transit_options[2]['type'] = 'bus'
 
-for i in transit_options:
-	for key in i:
-		print key + " - " + str(i[key])
-	print ''
+# West Bound
 
-sys.exit(0)
+# for i in transit_options:
+# 	for key in i:
+# 		print key + " - " + str(i[key])
+# 	print ''
+
+# sys.exit(0)
 
 
 b_url = 'http://www3.rtd-denver.com/schedules/getSchedule.action?runboardId=151&routeType=0&routeId=B&serviceType=3'
